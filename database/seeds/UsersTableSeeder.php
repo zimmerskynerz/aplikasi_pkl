@@ -15,9 +15,27 @@ class UsersTableSeeder extends Seeder
     {
         DB::table("users")->insert([
             "name"      => "test",
-            "username"  => "test",
-            "password"  => Hash::make("halohalo"),
+            "username"  => "pendaftar",
+            "password"  => Hash::make("pendaftar"),
             "level"     => "pendaftar"
+        ]);
+        DB::table("users")->insert([
+            "name"      => "test",
+            "username"  => "kabid",
+            "password"  => Hash::make("kabid"),
+            "level"     => "kabid"
+        ]);
+        DB::table("users")->insert([
+            "name"      => "test",
+            "username"  => "kepala",
+            "password"  => Hash::make("kepala"),
+            "level"     => "kepala"
+        ]);
+        DB::table("users")->insert([
+            "name"      => "test",
+            "username"  => "kasi",
+            "password"  => Hash::make("kasi"),
+            "level"     => "kasi"
         ]);
     }
 }
